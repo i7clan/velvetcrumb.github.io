@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Order | Velvet Crumbs</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<section class="order-page">
+
+    <div class="order-box">
+
+        <div class="brand">
+
+    <a href="index.html" class="brand-logo">
+        Velvet Crumbs
+    </a>
+
+    <p class="order-subtitle">
+        Luxury Dessert Studio
+    </p>
+
+</div>
+
+        <h1>Begin Your Order</h1>
+
+        <p class="order-description">
+            Fill in your order details below. When you're ready, we'll copy your
+            order details and open our Instagram page so you can paste them into
+            our DMs.
+        </p>
+
+        <form id="orderForm">
+
+            <div class="input-group">
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Your Full Name"
+                    required>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="Phone Number"
+                    required>
+
+            </div>
+
+            <div class="input-group">
+
+                <select id="dessert">
+
+                    <option>Chocolate Cake</option>
+                    <option>Vanilla Cake</option>
+                    <option>Custom Cake</option>
+                    <option>Brownies</option>
+                    <option>Cookies</option>
+                    <option>Sundae</option>
+
+                </select>
+
+                <input
+                    type="number"
+                    id="quantity"
+                    placeholder="Quantity"
+                    min="1"
+                    required>
+
+            </div>
+
+            <div class="input-group">
+
+                <input
+                    type="text"
+                    id="area"
+                    placeholder="Delivery Area (Karachi)"
+                    required>
+
+                <input
+                    type="date"
+                    id="date"
+                    required>
+
+            </div>
+
+            <textarea
+                id="notes"
+                rows="5"
+                placeholder="Custom Request (Optional)"></textarea>
+
+            <button
+                type="button"
+                class="instagram-btn"
+                onclick="sendOrder()">
+
+                Begin Your Order →
+
+            </button>
+
+             </form>
+
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
